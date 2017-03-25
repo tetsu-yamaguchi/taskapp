@@ -121,7 +121,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     @IBAction func search(_ sender: UIButton) {
-        print("\(kensaku.text)")
         if(kensaku.text?.isEmpty == true){
             taskArray = realm.objects(Task.self)
             tableView.reloadData()
